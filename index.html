@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Prático de Alimentação e Ansiedade</title>
+    <title>Guia Prático de Alimentação e Ansiedade - Júllia Fabianne</title>
     <style>
         /* Reset e estilos gerais */
         * {
@@ -45,6 +45,17 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
         }
 
         .logo {
@@ -164,6 +175,47 @@
             margin-bottom: 20px;
         }
 
+        /* Nutritionist Section */
+        .nutritionist {
+            padding: 100px 0;
+            background-color: #e6f3f3;
+        }
+
+        .nutritionist-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .nutritionist-photo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 40px 30px 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .nutritionist-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .nutritionist-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1a5f7a;
+        }
+
+        .nutritionist-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
         /* Features Section */
         .features {
             padding: 100px 0;
@@ -271,6 +323,18 @@
             padding: 0 20px;
         }
 
+        .footer-left {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-img {
+            height: 40px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
         .footer-logo {
             font-size: 1.3rem;
             font-weight: 700;
@@ -331,6 +395,15 @@
                 font-size: 2rem;
             }
 
+            .nutritionist-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nutritionist-photo {
+                margin: 0 0 30px 0;
+            }
+
             .feature-item {
                 max-width: 100%;
             }
@@ -338,6 +411,10 @@
             .footer-content {
                 flex-direction: column;
                 text-align: center;
+            }
+
+            .footer-left {
+                justify-content: center;
             }
 
             .social-links {
@@ -371,10 +448,14 @@
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
-            <div class="logo">Nutri & Mente</div>
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Logo Júllia Fabianne" class="logo-img">
+                <div class="logo">Júllia Fabianne</div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre o Guia</a></li>
+                    <li><a href="#nutricionista">Sobre a Nutricionista</a></li>
                     <li><a href="#conteudo">O que você vai aprender</a></li>
                     <li><a href="#download">Download</a></li>
                 </ul>
@@ -403,6 +484,27 @@
                     estratégias para montar refeições equilibradas.</p>
                 <p>Criado com base em pesquisas científicas e experiências reais, este guia oferece soluções que podem
                     ser aplicadas no seu dia a dia, sem complicações ou dietas radicais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutritionist Section -->
+    <section class="nutritionist" id="nutricionista">
+        <div class="container">
+            <h2 class="section-title">Quem é Júllia Fabianne</h2>
+            <div class="nutritionist-content">
+                <img src="perfil.jpeg" alt="Foto da Nutricionista Júllia Fabianne" class="nutritionist-photo">
+                <div class="nutritionist-info">
+                    <h3>Nutricionista especialista em Nutrição Esportiva</h3>
+                    <p>Júllia Fabianne Nutricionista formada pela Estácio desde 2018, pós graduada pela UNINTER em
+                        Nutrição Esportiva desde 2020, com experiência clínica, hospitalar e em políticas públicas</p>
+                    <p>. Atuei como nutricionista hospitalar (2019–2023), no PNAE de Muritiba/BA (2024-atual) e como RT
+                        em clínica psiquiátrica (2024–2025). Fundadora da DJ consultoria em alimentação, desenvolvo
+                        estratégias nutricionais com foco humanizado, terapêutico e culturalmente sensível. Destaco-me
+                        pela empatia, comunicação eficaz e compromisso com a atualização profissional contínua.</p>
+                    <p>Este guia é resultado da minha experiência e prática clínica, reunindo as principais estratégias
+                        que ajudaram meus pacientes a controlarem a ansiedade através da alimentação.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -469,17 +571,25 @@
     <footer>
         <div class="footer-content">
             <div>
-                <div class="footer-logo">Nutri & Mente</div>
+                <div class="footer-left">
+                    <img src="logo.jpeg" alt="Logo Júllia Fabianne" class="footer-logo-img">
+                    <div class="footer-logo">Júllia Fabianne</div>
+                </div>
                 <p>Transformando a relação entre alimentação e bem-estar emocional.</p>
                 <div class="social-links">
-                    <a href="#" class="social-icon">📱</a>
-                    <a href="#" class="social-icon">📸</a>
-                    <a href="#" class="social-icon">📘</a>
+                    <a href="https://www.instagram.com/nutricionistajullia/?igsh=MTNpY2o5czNxanNwNg%3D%3D#"
+                        class="social-icon" title="Instagram">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/j%C3%BAllia-fabiane-b47653305/" class="social-icon"
+                        title="LinkedIn">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            © 2025 – Todos os direitos reservados.
+            © 2025 – Todos os direitos reservados. Júllia Fabianne Nutricionista.
         </div>
     </footer>
 
